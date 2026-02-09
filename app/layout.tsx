@@ -67,8 +67,22 @@ export const metadata: Metadata = {
     alternates: {
         canonical: SITE_URL,
     },
+    manifest: "/manifest.json",
+    icons: {
+        icon: [
+            { url: "/icon.svg", type: "image/svg+xml" },
+            { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+            { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+        ],
+        apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    },
+    appleWebApp: {
+        capable: true,
+        statusBarStyle: "default",
+        title: "Alexandre V.L",
+    },
     other: {
-        "theme-color": "#FAF7F2",
+        "theme-color": "#2D2418",
     },
 };
 
