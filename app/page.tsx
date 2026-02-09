@@ -36,7 +36,7 @@ export default function Home() {
         <Suspense>
             <HomeClient projects={projects}>
                 <div className="bento-wrapper">
-                    <main className="bento-grid" role="main">
+                    <main className="bento-grid">
                         {/* ── Intro tile ── */}
                         <header className="tile tile-intro">
                             <SkeletonImage

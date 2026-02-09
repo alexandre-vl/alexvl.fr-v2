@@ -2,7 +2,11 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import ProjectOverlay from "./ProjectOverlay";
+import dynamic from "next/dynamic";
+
+const ProjectOverlay = dynamic(() => import("./ProjectOverlay"), {
+    ssr: false,
+});
 import type { Project } from "../data/projects";
 
 /**
@@ -35,9 +39,9 @@ export default function HomeClient({
         }
     }, [searchParams, projects, router]);
 
-    const handleTileClick = useCallback(
-        (e: React.MouseEvent) => {
-            const target = (e.target as HTMLElement).closest<HTMLElement>("[data-project-id]");
+    const openProject = useCallback(
+        (el: HTMLElement) => {
+            const target = el.closest<HTMLElement>("[data-project-id]");
             if (!target) return;
             const id = target.dataset.projectId;
             const project = projects.find((p) => p.id === id);
@@ -46,10 +50,25 @@ export default function HomeClient({
         [projects]
     );
 
+    const handleTileClick = useCallback(
+        (e: React.MouseEvent) => openProject(e.target as HTMLElement),
+        [openProject]
+    );
+
+    const handleTileKeyDown = useCallback(
+        (e: React.KeyboardEvent) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                openProject(e.target as HTMLElement);
+            }
+        },
+        [openProject]
+    );
+
     return (
         <>
-            {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
-            <div onClick={handleTileClick}>{children}</div>
+            {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+            <div onClick={handleTileClick} onKeyDown={handleTileKeyDown}>{children}</div>
             {selected && (
                 <ProjectOverlay
                     project={selected}
