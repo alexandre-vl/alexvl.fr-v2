@@ -1,0 +1,48 @@
+# Alexandre Vargas Lopez — Fullstack Developer
+
+> French fullstack developer based in Bordeaux. Builds real-time SaaS platforms, automation tools, and end-to-end web solutions. Available for freelance.
+
+## Contact
+
+- Email: alexandre.vargas.lopez@gmail.com
+- GitHub: https://github.com/alexandre-vl
+- LinkedIn: https://www.linkedin.com/in/alexandre-vargas-lopez-1b6450233/
+- X / Twitter: https://twitter.com/alexx_vrgs
+
+## Projects
+
+### Devolab (2023–present) — Web Agency
+Co-founded agency delivering custom websites, SEO, and self-hosted infrastructure for Bordeaux businesses.
+- Stack: Vue.js, Vite, Node.js, SEO
+- URL: https://www.devolab.net
+
+### Ontrace (2024–present) — SaaS Platform
+Real-time Vinted automation platform with millisecond-level product detection, automated purchasing, and multi-tenant org support. Active paying subscribers.
+- Stack: Next.js, React, Go, WebSocket, Redis, PostgreSQL
+
+### Upsky (2023) — Trading Platform
+Copy-trading platform with live MetaTrader 5 integration for real-time strategy replication.
+- Stack: Vue.js, Node.js, MetaTrader 5, WebSocket
+
+### Yaprof (2022) — Open-source PWA
+Collaborative teacher absence tracker for French students, connected to Pronote with social verification.
+- Stack: Vue 3, Pronote API, PWA, Capacitor
+- GitHub: https://github.com/Yaprof/yaprof-app
+
+### Homeflix (2022) — Discord Bot
+Movie night scheduler with in-channel streaming via FFmpeg transcoding.
+- Stack: Node.js, Discord.js, FFmpeg
+
+### Playbot (2023) — Desktop App
+Real-time gaming matchmaking with quests, leaderboards, and live game detection.
+- Stack: Electron, Nuxt.js, NestJS
+
+## Skills
+
+Frontend: React, Next.js, Vue.js, TypeScript, Electron, PWA
+Backend: Go, Node.js, NestJS, WebSocket, REST APIs
+Data: PostgreSQL, Redis, Docker
+
+## Optional
+
+- Full details: https://alexvl.fr/llms-full.txt

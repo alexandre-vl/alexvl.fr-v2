@@ -1,0 +1,78 @@
+# Alexandre Vargas Lopez — Fullstack Developer
+
+> Personal portfolio of Alexandre Vargas Lopez, a French fullstack developer based in Bordeaux, France. Available for freelance and collaboration.
+
+## About
+
+Alexandre Vargas Lopez is a fullstack developer with expertise in modern web technologies including React, Next.js, Vue.js, TypeScript, Go, Node.js, PostgreSQL, Redis, and Docker. He specializes in building real-time SaaS applications, automation platforms, and end-to-end web solutions.
+
+- Email: alexandre.vargas.lopez@gmail.com
+- GitHub: https://github.com/alexandre-vl
+- LinkedIn: https://www.linkedin.com/in/alexandre-vargas-lopez-1b6450233/
+- X / Twitter: https://twitter.com/alexx_vrgs
+- Location: Bordeaux, France
+
+## Projects
+
+### Devolab — Web Agency (2023–present)
+**Problem:** Local businesses in Bordeaux needed affordable, high-quality web presence with reliable hosting.
+**Approach:** Co-founded a web agency delivering custom sites with SEO optimization, deployed on self-managed servers for full control.
+**Outcome:** Delivering end-to-end web solutions for multiple clients — design, development, deployment, and ongoing maintenance.
+- Stack: Vue.js, Vite, Node.js, SEO
+- URL: https://www.devolab.net
+
+### Ontrace — SaaS Platform (2024–present)
+**Problem:** Vinted resellers needed real-time product detection and automated purchasing to compete in a fast-moving marketplace.
+**Approach:** Built a full SaaS platform with millisecond-level product feed, automated purchasing engine, advanced filter management, and multi-tenant organization support — all powered by WebSocket for live updates.
+**Outcome:** Active platform serving paying subscribers with real-time feeds, CRM, order tracking, and built-in messaging.
+- Stack: Next.js, React, Go, WebSocket, Redis, PostgreSQL
+
+### Upsky — Trading Platform (2023)
+**Problem:** Retail traders wanted to replicate strategies from professional traders without manual execution.
+**Approach:** Built a copy-trading platform with direct MetaTrader 5 integration for real-time order execution, trader discovery, and strategy analytics.
+**Outcome:** Fully functional backend connected to live MetaTrader APIs. Not launched commercially.
+- Stack: Vue.js, Node.js, MetaTrader 5, WebSocket, REST APIs
+
+### Yaprof — Mobile PWA (2022)
+**Problem:** French high school students had no collaborative way to track teacher absences in real time.
+**Approach:** Created an open-source PWA connecting to Pronote with a social feed where students report absences — verified by community upvotes/downvotes.
+**Outcome:** Open-source project with gamification layer (coins, profiles), available on GitHub.
+- Stack: Vue 3, Pronote API, PWA, Capacitor
+- GitHub: https://github.com/Yaprof/yaprof-app
+
+### Homeflix — Discord Bot (2022)
+**Problem:** Friend groups wanted to host movie nights on Discord but lacked scheduling and streaming tools.
+**Approach:** Built a Discord bot that schedules screenings and streams movies directly into voice channels using FFmpeg transcoding.
+**Outcome:** Community tool enabling movie catalog browsing, voting, and live session joining.
+- Stack: Node.js, Discord.js, FFmpeg
+
+### Playbot — Desktop Application (2023)
+**Problem:** Gamers needed a way to find teammates matched by skill level and game preferences in real time.
+**Approach:** Built a full desktop application with matchmaking, daily quests, coin rewards, global leaderboard, friend lists, and live game detection.
+**Outcome:** Complete product with subscription tier. Not launched commercially.
+- Stack: Electron, Nuxt.js, NestJS
+
+## Technical Skills
+
+### Frontend
+React, Next.js, Vue.js (2/3), Nuxt.js, TypeScript, Electron, Capacitor, PWA
+
+### Backend
+Go, Node.js, NestJS, REST APIs, WebSocket, FFmpeg
+
+### Data & Infrastructure
+PostgreSQL, Redis, Docker, Self-Hosted Servers
+
+### Other
+SEO Optimization, Real-time Systems, SaaS Architecture, Multi-tenant Design
+
+## Experience Timeline
+
+| Year | Project | Type |
+|------|---------|------|
+| 2022 | Yaprof | Open-source PWA |
+| 2022 | Homeflix | Discord Bot |
+| 2023 | Upsky | Trading Platform |
+| 2023 | Playbot | Desktop App |
+| 2023 | Devolab | Web Agency (ongoing) |
+| 2024 | Ontrace | SaaS Platform (ongoing) |

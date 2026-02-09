@@ -1,0 +1,4 @@
+# Security contact for alexvl.fr
+Contact: mailto:alexandre.vargas.lopez@gmail.com
+Preferred-Languages: en, fr
+Canonical: https://alexvl.fr/.well-known/security.txt
