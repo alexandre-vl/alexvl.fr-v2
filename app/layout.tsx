@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         template: "%s | Alexandre Vargas Lopez",
     },
     description:
-        "Portfolio of Alexandre Vargas Lopez, a French fullstack developer based in Bordeaux. Specializing in React, Next.js, Vue.js, Go, and real-time SaaS applications.",
+        "Portfolio of Alexandre Vargas Lopez, a French fullstack developer based in Nice. Specializing in React, Next.js, Vue.js, Go, and real-time SaaS applications.",
     keywords: [
         "Alexandre Vargas Lopez",
         "fullstack developer",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         "Go",
         "Node.js",
         "TypeScript",
-        "Bordeaux",
+        "Nice",
         "France",
         "freelance",
         "portfolio",
@@ -101,7 +101,7 @@ function JsonLd() {
                 email: "alexandre.vargas.lopez@gmail.com",
                 address: {
                     "@type": "PostalAddress",
-                    addressLocality: "Bordeaux",
+                    addressLocality: "Nice",
                     addressCountry: "FR",
                 },
                 knowsAbout: [
@@ -130,7 +130,7 @@ function JsonLd() {
                 url: SITE_URL,
                 name: "Alexandre Vargas Lopez — Portfolio",
                 description:
-                    "Portfolio of Alexandre Vargas Lopez, a French fullstack developer based in Bordeaux.",
+                    "Portfolio of Alexandre Vargas Lopez, a French fullstack developer based in Nice.",
                 publisher: { "@id": `${SITE_URL}/#person` },
                 inLanguage: "en",
             },

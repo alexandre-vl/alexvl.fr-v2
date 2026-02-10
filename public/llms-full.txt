@@ -1,6 +1,6 @@
 # Alexandre Vargas Lopez — Fullstack Developer
 
-> Personal portfolio of Alexandre Vargas Lopez, a French fullstack developer based in Bordeaux, France. Available for freelance and collaboration.
+> Personal portfolio of Alexandre Vargas Lopez, a French fullstack developer based in Nice, France. Available for freelance and collaboration.
 
 ## About
 
@@ -10,12 +10,12 @@ Alexandre Vargas Lopez is a fullstack developer with expertise in modern web tec
 - GitHub: https://github.com/alexandre-vl
 - LinkedIn: https://www.linkedin.com/in/alexandre-vargas-lopez-1b6450233/
 - X / Twitter: https://twitter.com/alexx_vrgs
-- Location: Bordeaux, France
+- Location: Nice, France
 
 ## Projects
 
 ### Devolab — Web Agency (2023–present)
-**Problem:** Local businesses in Bordeaux needed affordable, high-quality web presence with reliable hosting.
+**Problem:** Local businesses needed affordable, high-quality web presence with reliable hosting.
 **Approach:** Co-founded a web agency delivering custom sites with SEO optimization, deployed on self-managed servers for full control.
 **Outcome:** Delivering end-to-end web solutions for multiple clients — design, development, deployment, and ongoing maintenance.
 - Stack: Vue.js, Vite, Node.js, SEO
@@ -26,6 +26,12 @@ Alexandre Vargas Lopez is a fullstack developer with expertise in modern web tec
 **Approach:** Built a full SaaS platform with millisecond-level product feed, automated purchasing engine, advanced filter management, and multi-tenant organization support — all powered by WebSocket for live updates.
 **Outcome:** Active platform serving paying subscribers with real-time feeds, CRM, order tracking, and built-in messaging.
 - Stack: Next.js, React, Go, WebSocket, Redis, PostgreSQL
+
+### ReadyCook — SaaS Platform (2024)
+**Problem:** Vinted resellers needed a centralized tool to manage inventory, schedule listings, track orders, and analyze revenue across multiple accounts.
+**Approach:** Built an all-in-one CRM with stock management, strategic listing scheduling with automated publication, real-time order tracking, 1-click shipping label downloads, multi-account management, and detailed financial reports.
+**Outcome:** Fully operational platform used by active sellers managing hundreds of orders and thousands in monthly revenue.
+- Stack: Next.js, React, Go, PostgreSQL, Redis
 
 ### Upsky — Trading Platform (2023)
 **Problem:** Retail traders wanted to replicate strategies from professional traders without manual execution.
@@ -76,3 +82,4 @@ SEO Optimization, Real-time Systems, SaaS Architecture, Multi-tenant Design
 | 2023 | Playbot | Desktop App |
 | 2023 | Devolab | Web Agency (ongoing) |
 | 2024 | Ontrace | SaaS Platform (ongoing) |
+| 2024 | ReadyCook | SaaS Platform |

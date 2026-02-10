@@ -1,6 +1,6 @@
 # Alexandre Vargas Lopez — Fullstack Developer
 
-> French fullstack developer based in Bordeaux. Builds real-time SaaS platforms, automation tools, and end-to-end web solutions. Available for freelance.
+> French fullstack developer based in Nice. Builds real-time SaaS platforms, automation tools, and end-to-end web solutions. Available for freelance.
 
 ## Contact
 
@@ -19,6 +19,10 @@ Co-founded agency delivering custom websites, SEO, and self-hosted infrastructur
 ### Ontrace (2024–present) — SaaS Platform
 Real-time Vinted automation platform with millisecond-level product detection, automated purchasing, and multi-tenant org support. Active paying subscribers.
 - Stack: Next.js, React, Go, WebSocket, Redis, PostgreSQL
+
+### ReadyCook (2024) — SaaS Platform
+All-in-one Vinted seller CRM with stock management, listing scheduling, order tracking, 1-click shipping labels, multi-account support, and financial analytics.
+- Stack: Next.js, React, Go, PostgreSQL, Redis
 
 ### Upsky (2023) — Trading Platform
 Copy-trading platform with live MetaTrader 5 integration for real-time strategy replication.

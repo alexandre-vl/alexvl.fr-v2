@@ -77,20 +77,15 @@ export default function Home() {
                             </div>
                         </nav>
 
-                        {/* ── Featured: Ontrace ── */}
+                        {/* ── Featured: Ontrace + ReadyCook ── */}
                         <ProjectTile project={projects[1]} featured />
+                        <ProjectTile project={projects[2]} featured />
 
-                        {/* ── Upsky ── */}
-                        <ProjectTile project={projects[2]} />
-
-                        {/* ── Yaprof ── */}
+                        {/* ── Upsky · Yaprof · Homeflix · Playbot ── */}
                         <ProjectTile project={projects[3]} />
-
-                        {/* ── Homeflix ── */}
                         <ProjectTile project={projects[4]} />
-
-                        {/* ── Playbot ── */}
                         <ProjectTile project={projects[5]} />
+                        <ProjectTile project={projects[6]} />
 
                         {/* ── Tech tile ── */}
                         <section className="tile tile-tech" aria-label="Technical skills">
