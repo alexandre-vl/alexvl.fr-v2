@@ -19,6 +19,7 @@ export default function SkeletonImage({
     wrapperClassName = "",
     wrapperStyle,
     style,
+    alt,
     ...imageProps
 }: SkeletonImageProps) {
     const [loaded, setLoaded] = useState(false);
@@ -30,6 +31,7 @@ export default function SkeletonImage({
         >
             <Image
                 {...imageProps}
+                alt={alt}
                 style={{
                     ...style,
                     opacity: loaded ? 1 : 0,

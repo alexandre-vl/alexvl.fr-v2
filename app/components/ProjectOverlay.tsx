@@ -31,7 +31,8 @@ export default function ProjectOverlay({ project, onClose }: Props) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [dragOffset, setDragOffset] = useState(0);
     const dragStartX = useRef<number | null>(null);
-    const isDragging = useRef(false);
+    const isDraggingRef = useRef(false);
+    const [isDragging, setIsDragging] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
 
     const images = project.images;
@@ -57,27 +58,24 @@ export default function ProjectOverlay({ project, onClose }: Props) {
         };
     }, [handleClose, hasMultiple, images.length]);
 
-    // Reset index when project changes
-    useEffect(() => {
-        setCurrentIndex(0);
-    }, [project.id]);
-
     // Touch/mouse drag handlers
     const handleDragStart = (clientX: number) => {
         dragStartX.current = clientX;
-        isDragging.current = true;
+        isDraggingRef.current = true;
+        setIsDragging(true);
         setDragOffset(0);
     };
 
     const handleDragMove = (clientX: number) => {
-        if (!isDragging.current || dragStartX.current === null) return;
+        if (!isDraggingRef.current || dragStartX.current === null) return;
         const diff = clientX - dragStartX.current;
         setDragOffset(diff);
     };
 
     const handleDragEnd = () => {
-        if (!isDragging.current) return;
-        isDragging.current = false;
+        if (!isDraggingRef.current) return;
+        isDraggingRef.current = false;
+        setIsDragging(false);
         const threshold = 60;
         if (dragOffset < -threshold && currentIndex < images.length - 1) {
             setCurrentIndex((i) => i + 1);
@@ -101,7 +99,7 @@ export default function ProjectOverlay({ project, onClose }: Props) {
                         className="overlay-carousel-track"
                         style={{
                             transform: `translateX(calc(-${currentIndex * 100}% + ${dragOffset}px))`,
-                            transition: isDragging.current ? "none" : "transform 0.35s cubic-bezier(0.4,0,0.2,1)",
+                            transition: isDragging ? "none" : "transform 0.35s cubic-bezier(0.4,0,0.2,1)",
                         }}
                         onMouseDown={(e) => { if (hasMultiple) { e.preventDefault(); handleDragStart(e.clientX); } }}
                         onMouseMove={(e) => handleDragMove(e.clientX)}

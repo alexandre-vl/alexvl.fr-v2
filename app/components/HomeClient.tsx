@@ -22,20 +22,29 @@ export default function HomeClient({
     children: React.ReactNode;
     projects: Project[];
 }) {
-    const [selected, setSelected] = useState<Project | null>(null);
     const searchParams = useSearchParams();
     const router = useRouter();
+    const [selectedId, setSelectedId] = useState<string | null>(() =>
+        searchParams.get("project")
+    );
+    const selected = selectedId
+        ? projects.find((project) => project.id === selectedId) ?? null
+        : null;
 
     // Auto-open project from ?project= query param (SEO redirect)
     useEffect(() => {
         const projectId = searchParams.get("project");
-        if (projectId) {
-            const project = projects.find((p) => p.id === projectId);
-            if (project) {
-                setSelected(project);
-                // Clean URL without triggering navigation
-                router.replace("/", { scroll: false });
-            }
+        if (!projectId) return;
+
+        const project = projects.find((p) => p.id === projectId);
+        const frame = project
+            ? requestAnimationFrame(() => setSelectedId(project.id))
+            : null;
+
+        router.replace("/", { scroll: false });
+
+        return () => {
+            if (frame !== null) cancelAnimationFrame(frame);
         }
     }, [searchParams, projects, router]);
 
@@ -45,7 +54,7 @@ export default function HomeClient({
             if (!target) return;
             const id = target.dataset.projectId;
             const project = projects.find((p) => p.id === id);
-            if (project) setSelected(project);
+            if (project) setSelectedId(project.id);
         },
         [projects]
     );
@@ -67,15 +76,14 @@ export default function HomeClient({
 
     return (
         <>
-            {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
             <div onClick={handleTileClick} onKeyDown={handleTileKeyDown}>{children}</div>
             {selected && (
                 <ProjectOverlay
+                    key={selected.id}
                     project={selected}
-                    onClose={() => setSelected(null)}
+                    onClose={() => setSelectedId(null)}
                 />
             )}
         </>
     );
 }
-
